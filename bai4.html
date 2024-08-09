@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vn">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                background: #000;
+                font-family: sans-serif;
+                color: white;
+                box-sizing: border-box;
+            }
+
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .solve {
+                width: 350px;
+                height: 380px;
+                /* background: red; */
+                border: 1px solid #ccc;
+                border-radius: 12px;
+            }
+
+            .content {
+                margin-left: 30px;
+                margin-top: 30px;
+            }
+
+            .no-border-select,
+            .name {
+                padding: 10px;
+                font-size: 16px;
+                outline: none;
+                border-radius: 8px;
+                width: min(100%, 288px);
+            }
+
+            .name {
+                /* width: min(100%, 263px); */
+                border: 1px solid #ccc;
+                resize: horizontal;
+                width: 288px; /* Độ rộng ban đầu */
+                max-width: 100%; /* Độ rộng tối đa */
+                min-width: 50px; /* Độ rộng tối thiểu */
+            }
+
+            .row3 {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 25px;
+            }
+
+            .cancel {
+                padding: 10px 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .deloy {
+                padding: 10px 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background: white;
+                color: #000;
+                margin-right: 30px;
+            }
+
+            .title{
+                font-size: xx-large;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+
+            .desc{
+                margin: 0;
+                color: #ccc;;
+                font-size: 16px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="solve">
+            <div class="content">
+                <p class="title">Create project</p>
+                <p class="desc">Deloy your new project in one-click</p>
+                <div class="detail">
+                    <div class="row row1">
+                        <p>Name</p>
+                        <input
+                            type="text"
+                            class="name"
+                            placeholder="Name of your project"
+                        />
+                    </div>
+                    <div class="row row2">
+                        <p>Framework</p>
+                        <select class="no-border-select">
+                            <option value="" disabled selected hidden>
+                                Select
+                            </option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="row3">
+                        <a href="#!" class="cancel">Cancel</a>
+                        <a href="#!" class="deloy">Deloy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
